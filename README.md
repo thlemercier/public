@@ -14,5 +14,5 @@
 ![alt tag](https://github.com/thlemercier/public/blob/master/draw.jpg)
 
 ## Example of data
-![alt tag](https://github.com/thlemercier/public/blob/master/links.jpg)
-![alt tag](https://github.com/thlemercier/public/blob/master/elastic.jpg)
+![alt tag](https://github.com/thlemercier/public/blob/master/links.JPG)
+![alt tag](https://github.com/thlemercier/public/blob/master/elastic.JPG)
