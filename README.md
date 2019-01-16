@@ -11,4 +11,4 @@
 - Spring Kafka (Todo)
 
 ## Architecture
-[[https://github.com/thlemercier/public/blob/master/draw.jpg|alt=octocat]]
+![alt tag](https://github.com/thlemercier/public/blob/master/draw.jpg)
