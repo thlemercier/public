@@ -1,0 +1,34 @@
+version: "2"
+
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.2.2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - //c/Users/docker_volumes/elasticsearch/data:/usr/share/elasticsearch/data/
+    environment:
+      - cluster.name=elasticsearch
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.2.2
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+  
+  cerebro:
+    build: .
+    image: lmenezes/cerebro
+    ports:
+      - "9000:9000"
+    environment:
+      - HOSTS=http://elasticsearch:9200
